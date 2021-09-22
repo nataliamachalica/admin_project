@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Administration panel</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+      <div class="layout">
+      <!-- Sidebar -->
+        <section class="menu">
+          <aside class="sidebar">
+            <div class="logo">
+              <h1>Just do it</h1>
+              <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
+            </div>
+            <nav class="sidebar-nav">
+              <ul class="sidebar-links">
+                <li>
+                  <a href="#general"><img src="vendor/icons/general.svg" class="icon-general icon" alt="">General</a>
+                </li>
+                <li>
+                  <a href="#details"><img src="vendor/icons/details.svg" class="icon-details icon"></img>Details</a>
+                </li>
+                <li>
+                  <a href="#links"><img src="vendor/icons/links.svg" class="icon-links icon">Links</a>
+                </li>
+                <li>
+                  <a href="#banners"><img src="vendor/icons/banners.svg" class="icon-banners icon">Banners</a>
+                </li>
+                <li>
+                  <a href="#personaldata"><img src="vendor/icons/personaldata.svg" class="icon-personaldata icon">Personal data</a>
+                </li>
+                <li>
+                  <a href="#payout"><img src="vendor/icons/payout.svg" class="icon-payout icon">Payout</a>
+                </li>
+                <li>
+                  <a href="#postback"><img src="vendor/icons/postback.svg" class="icon-postback icon">Postback</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="contact">
+              <div class="manager-title">
+                <h3>Your Manager</h3>
+              </div>
+              <div class="manager-profile">
+                <div class="manager-image">
+                  <img src="images/pexels-pixabay-220453.jpg" alt="">
+                </div>
+                <a href="#" class="profile-name">Mikhael E.</a>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+    <!-- Topbar -->
+        <div class="top-bar">
+          <div class="top-bar-right">
+            <ul class="top-menu-links">
+              <li>
+                <img src="vendor/icons/wallet.svg" class="icon-wallet icon-top">
+                <div class="balance">$1,500.00</div>
+                <img src="vendor/icons/arrow-down.svg" class="icon-arrow-down icon-top" alt=""></img>
+              </li>
+              <li>
+                <img src="vendor/icons/notification.svg" class="icon-notification icon-top"></img>
+              </li>
+              <li>
+                <img src="vendor/icons/profile.svg" class="icon-profile icon-top">
+                <div class="name-profile">Leonardo Dicaprio</div>
+              </li>
+              <li>
+                <img src="vendor/icons/quit.svg" class="icon-quit">
+              </li>
+            </ul>
+          </div>
+        </div>
+
+    <!-- Dashboard -->
+        <section id="general" class="page general page-active">
+          <div class="container">
+            <div class="page-title">
+              <h3>General statistic</h3>
+            </div>
+            <div class="container-body">
+              <form class="form row date-picker" action="">
+                <div class="dates form-field">
+                  <input placeholder="from date" id="date-picker-1" class="form-field">
+                  <div class="row">
+                    <input placeholder="to date" id="date-picker-2" class="form-field">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+      <script src="js/scripts.js"></script>
+    </body>
+</html>
