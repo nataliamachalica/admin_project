@@ -1,6 +1,7 @@
 .burger {
 	padding: 10px;
 	cursor: pointer;
+	display: none;
 
 	div {
 		width: 20px;
@@ -21,5 +22,11 @@
 	.line3 {
 		height: 2px;
 		margin: 5px 5px 2px 5px;
+	}
+}
+
+@media (max-width: 768px) {
+	.burger{
+		display: block;
 	}
 }

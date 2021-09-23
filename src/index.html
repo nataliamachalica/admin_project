@@ -11,7 +11,7 @@
     <body>
 
       <!-- Modale -->
-      <div class="overlay" id="overlay">
+      <div class="overlay overlay-modal" id="overlay-modal">
         <div id="quit" class="modal">
           <div class="title-modal">
             <h5>Do you really want to Quit?</h5>
@@ -23,6 +23,8 @@
         </div>
 
       </div>
+      <div id="overlay" class="overlay overlay-nav"></div>
+
 
       <div class="layout">
       <!-- Sidebar -->
@@ -154,11 +156,11 @@
                 </div>
               </div>
             </div>
-            <div class="chart-wrapper row max-width">
+            <div class="chart-wrapper">
               <div class="chart-title">
                 <h5>Earnings chart</h5>
               </div>
-              <div class="chart" style="position: relative; max-width: 800px; max-height: 350px;">
+              <div class="chart" style="position: relative;">
                 <canvas id="myChart" width="800" height="350"></canvas>
             </div>
           </div>
@@ -412,72 +414,33 @@
           </div>
         </div>
       </div>
-      <div id="banners" class="page">
+
+      <div id="personaldata" class="page">
         <div class="container">
           <div class="title">
-            <h3>Banners</h3>
+            <h3>Personal data</h3>
           </div>
-          <div class="links-wrapper">
-            <div class="button-wrapper">
-              <a href="#" class="btn btn-add">+ add new</a>
-            </div>
-            <ul class="links-column">
-              <li>
-                <p>Banner main</p>
-                <a href="#">http://www.website.com/bannermain.gif</a>
-                <div class="icons-list">
-                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
-                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
-                </div>
-              </li>
-              <li>
-                <p>Sign up banner</p>
-                <a href="#">http://www.website.com/signup.gif</a>
-                <div class="icons-list">
-                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
-                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
-                </div>
-              </li>
-              <li>
-                <p>Banner left side</p>
-                <a href="#">http://www.website.com/leftside.gif</a>
-                <div class="icons-list">
-                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
-                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
-                </div>
-              </li>
-              <li>
-                <p>Vertcial banner</p>
-                <a href="#">http://www.website.com/vert.gif</a>
-                <div class="icons-list">
-                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
-                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
-                </div>
-              </li>
-              <li>
-                <p>Front banner</p>
-                <a href="#">http://www.website.com/front.gif</a>
-                <div class="icons-list">
-                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
-                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
-                </div>
-              </li>
-              <li>
-                <p>Horizontal banner</p>
-                <a href="#">http://www.website.com/horizontal.gif</a>
-                <div class="icons-list">
-                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
-                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
-                </div>
-              </li>
-            </ul>
-            <div class="button-wrapper">
-              <a href="#" class="btn btn-add">+ add new</a>
-            </div>
-          </div>
+
         </div>
       </div>
-    </div>
+
+      <div id="payout" class="page">
+        <div class="container">
+          <div class="title">
+            <h3>Payout</h3>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="postback" class="page">
+        <div class="container">
+          <div class="title">
+            <h3>Postback</h3>
+          </div>
+
+        </div>
+      </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>

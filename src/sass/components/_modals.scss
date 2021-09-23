@@ -28,8 +28,8 @@
 	position: relative;
 	padding: 30px;
 	display: none;
-}
 
-.modal.show{
-	display: block;
+  .active{
+    display: block;
+  }
 }
