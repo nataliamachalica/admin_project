@@ -1,0 +1,78 @@
+.personal-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;
+	border-bottom: 1.5px solid $background-color2;
+}
+
+.social-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;
+	border-bottom: 1.5px solid $background-color2;
+}
+
+.wallet-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;
+	border-bottom: 1.5px solid $background-color2;
+}
+
+.password-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;
+	border-bottom: 1.5px solid $background-color2;
+}
+
+.personal-form{
+	min-width: 45%;
+
+	.field {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin-top: 15px;
+
+		&:last-child {
+			margin-bottom: 15px;
+		}
+
+		label{
+			font-size: 16px;
+			font-family: $text-font;
+		}
+
+		input {
+			border-radius: 5%;
+			border: 1.5px solid $background-color2;
+			height: 27px;
+			margin-left: 25px;
+		}
+	}
+}
+
+.btn-save {
+	padding: 0 25px;
+}
+
+@media (max-width: 768px) {
+	.personal-form{
+		min-width: 85%;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+	.personal-form {
+		min-width: 70%;
+	}
+}

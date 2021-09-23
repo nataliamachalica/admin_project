@@ -34,8 +34,6 @@
 		height: 20px;
 		border-width: thin;
 	}
-
-
 }
 
 @media (max-width: 768px){
@@ -45,6 +43,7 @@
 		height: 140px;
 		align-items: center;
 		justify-content: center;
+		padding-left: 35px;
 
 		.form-field{
 			height: 30px;
@@ -52,6 +51,7 @@
 			margin-left: 50px;
 
 			&:first-of-type {
+				margin-bottom: 5px;
 				border-right: 1.5px solid $background-color2;
 			}
 
