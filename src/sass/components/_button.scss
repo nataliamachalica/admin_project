@@ -24,3 +24,7 @@ img{
 	filter: invert(85%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(300%) contrast(100%);
 }
 }
+
+.btn-cancel {
+	background-color: $text-color;
+}

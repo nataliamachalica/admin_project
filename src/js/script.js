@@ -1,5 +1,10 @@
 {
 
+	/* Modals */
+	const closeModal = function(){
+		document.getElementById('overlay').classList.remove('show');
+	};
+
 	  /* Sidemenu */
 
 		function toggleMenu() {

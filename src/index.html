@@ -9,6 +9,21 @@
     </head>
 
     <body>
+
+      <!-- Modale -->
+      <div class="overlay" id="overlay">
+        <div id="quit" class="modal">
+          <div class="title-modal">
+            <h5>Do you really want to Quit?</h5>
+          </div>
+          <div class="modal-body">
+            <a href="#" class="btn btn-cancel js--close-modal">Cancel</a>
+            <a href="#" class="btn js--close-modal">Quit</a>
+          </div>
+        </div>
+
+      </div>
+
       <div class="layout">
       <!-- Sidebar -->
         <section class="menu">
@@ -46,6 +61,24 @@
                 </li>
               </ul>
             </nav>
+            <div class="rwd-top-bar">
+              <div class="rwd-line"></div>
+              <ul class="rwd-top-menu">
+                <li class="top-link">
+                  <a href="#" class="nav-item nav-link"><img src="vendor/icons/wallet.svg" class="icon-wallet icon-top" alt="">$1,500.00</a>
+                  <a href="#" class="nav-item nav-link"><img src="vendor/icons/arrow-down.svg" class="icon-arrow-down icon-top" alt=""></a>
+                </li>
+                <li class="top-link">
+                  <a href="#" class="nav-item nav-link"><img src="vendor/icons/notification.svg" class="icon-notification icon-top" alt="">Notifications</a>
+                </li>
+                <li class="top-link">
+                  <a href="#" class="nav-item nav-link"><img src="vendor/icons/profile.svg" class="icon-profile icon-top" alt="">Leonardo Dicaprio</a>
+                </li>
+                <li class="top-link">
+                  <a href="#quit" class="nav-item nav-link"><img src="vendor/icons/quit.svg" class="icon-quit" alt="">Log out</a>
+                </li>
+              </ul>
+            </div>
             <div class="contact">
               <div class="manager-title">
                 <h3>Your Manager</h3>
@@ -107,7 +140,7 @@
                 <p>FTD</p>
                 <p class="number">445</p>
               </div>
-                  
+
                 </div>
                 <div class="column">
                   <div class="table-row">
@@ -125,9 +158,8 @@
               <div class="chart-title">
                 <h5>Earnings chart</h5>
               </div>
-              <div class="chart">
-                <canvas id="myChart" class="max-width"></canvas>
-
+              <div class="chart" style="position: relative; max-width: 800px; max-height: 350px;">
+                <canvas id="myChart" width="800" height="350"></canvas>
             </div>
           </div>
         </div>
@@ -144,6 +176,81 @@
               <input class="form-field" type="date">
               <a href="#" class="btn btn-refresh"><img src="vendor/icons/refresh.svg" class="icon-refresh" alt=""></a>
             </form>
+          </div>
+
+          <div class="empty-line"></div>
+          <div class="scroll-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Tracker name</th>
+                  <th scope="col">Initialed date</th>
+                  <th scope="col">Visit</th>
+                  <th scope="col">Unique</th>
+                  <th scope="col">Signups</th>
+                  <th scope="col">FTD</th>
+                  <th scope="col">Depositors</th>
+                  <th scope="col">Deposits($)</th>
+                  <th scope="col">Payouts($)</th>
+                  <th scope="col">Turnover</th>
+                  <th scope="col">Deal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>aff/sam_test</td>
+                  <td>17/04/05 (12:45)</td>
+                  <td>235</td>
+                  <td>448</td>
+                  <td>84</td>
+                  <td>8</td>
+                  <td>3</td>
+                  <td>34,485.00</td>
+                  <td>485.00</td>
+                  <td>45.00</td>
+                  <td>cpl(200)</td>
+                </tr>
+                <tr>
+                  <td>aff/sam_test</td>
+                  <td>17/04/05 (12:45)</td>
+                  <td>235</td>
+                  <td>448</td>
+                  <td>84</td>
+                  <td>8</td>
+                  <td>3</td>
+                  <td>34,485.00</td>
+                  <td>485.00</td>
+                  <td>45.00</td>
+                  <td>cpl(200)</td>
+                </tr>
+                <tr>
+                  <td>aff/sam_test</td>
+                  <td>17/04/05 (12:45)</td>
+                  <td>235</td>
+                  <td>448</td>
+                  <td>84</td>
+                  <td>8</td>
+                  <td>3</td>
+                  <td>34,485.00</td>
+                  <td>485.00</td>
+                  <td>45.00</td>
+                  <td>cpl(200)</td>
+                </tr>
+                <tr>
+                  <td>aff/sam_test</td>
+                  <td>17/04/05 (12:45)</td>
+                  <td>235</td>
+                  <td>448</td>
+                  <td>84</td>
+                  <td>8</td>
+                  <td>3</td>
+                  <td>34,485.00</td>
+                  <td>485.00</td>
+                  <td>45.00</td>
+                  <td>cpl(200)</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
 
@@ -372,8 +479,8 @@
       </div>
     </div>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-      <script src="./js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
 
     </body>
 </html>

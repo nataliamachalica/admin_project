@@ -20,6 +20,10 @@
 		border-radius: 5px;
 		flex-direction: column;
 	}
+
+	.max-width{
+		max-width: 800px;
+	}
 }
 
 @media (max-width: 768px){
