@@ -1,49 +1,49 @@
 .btn {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	background-color: $brand-main-color;
-	color: $text-color-light;
-	border-radius: 3px;
-	padding: 0 10px;
-	min-height: 40px;
-	min-width: 40px;
-	text-decoration: none;
-	margin-left: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $brand-main-color;
+  color: $text-color-light;
+  border-radius: 3px;
+  padding: 0 10px;
+  min-height: 40px;
+  min-width: 40px;
+  text-decoration: none;
+  margin-left: 10px;
 
-&:hover {
-	cursor: pointer;
-	opacity: 0.85;
-}
+  &:hover {
+    cursor: pointer;
+    opacity: 0.85;
+  }
 }
 
 .btn-refresh{
-img{
-	height: 14px;
-	width: 14px;
-	filter: invert(85%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(300%) contrast(100%);
-}
+  img{
+    height: 14px;
+    width: 14px;
+    filter: invert(85%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(300%) contrast(100%);
+  }
 }
 
 .btn-cancel {
-	background-color: $text-color;
+  background-color: $text-color;
 }
 
 .btn-input {
-	min-height: 32px;
-	font-size: 15px;
-	min-width: 80px;
+  min-height: 32px;
+  font-size: 15px;
+  min-width: 80px;
 }
 
 @media (max-width: 768px) {
-	.btn-refresh {
-		padding: 0 10px;
-		min-height: 30px;
-		min-width: 30px;
+  .btn-refresh {
+    padding: 0 10px;
+    min-height: 30px;
+    min-width: 30px;
 
-		img{
-			height: 12px;
-			width: 12px;
-		}
-	}
+    img{
+      height: 12px;
+      width: 12px;
+    }
+  }
 }

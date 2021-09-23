@@ -1,91 +1,93 @@
 .overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 9999;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0,0,0,0.5);
-	justify-content: center;
-	align-items: center;
-	overflow: auto;
-	padding: 30px;
-	display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  padding: 30px;
+  display: none;
 }
 
 .overlay.show {
-	display: flex;
+  display: flex;
 }
 
 .overlay::webkit-scrollbar {
-	display: none;
+  display: none;
 }
 
 .modal {
-	max-width: 600px;
-	margin: auto;
-	background-color: #ffffff;
-	position: relative;
-	padding: 30px;
-	display: none;
+  max-width: 600px;
+  margin: auto;
+  background-color: #ffffff;
+  position: relative;
+  padding: 30px;
+  display: none;
+  font-family: $text-font;
 
-  &.active{
+  &.active {
     display: block;
   }
 }
 
+
 #login.modal{
-	padding: 20px;
-	min-width: 700px;
+  padding: 20px;
+  min-width: 700px;
 
-	.login-title{
-		height: 20px;
+  .login-title{
+    height: 20px;
 
-		h3{
-			font-weight: 400;
-			font-size: 13px;
-		}
-	}
+    h3{
+      font-weight: 400;
+      font-size: 13px;
+    }
+  }
 
-	.login-wrapper {
-		padding: 50px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+  .login-wrapper {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-		input {
-			height: 40px;
-			border-radius: 5%;
+    input {
+      height: 40px;
+      border-radius: 5%;
 
-			&:first-of-type {
-				margin-right: 10px;
-			}
-		}
+      &:first-of-type {
+        margin-right: 10px;
+      }
+    }
 
-		.btn {
-			width: 150px;
-		}
-	}
+    .btn {
+      width: 150px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
-	#login.modal{
-		min-width: 100px;
-		padding: 10px;
+  #login.modal{
+    min-width: 100px;
+    padding: 10px;
 
-		.login-wrapper{
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
+    .login-wrapper{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-			input{
-				margin-bottom: 10px;
+      input{
+        margin-bottom: 10px;
 
-				&:first-of-type {
-					margin-right: 0;
-				}
-			}
-		}
-	}
+        &:first-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
 }

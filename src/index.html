@@ -5,11 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Administration panel</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./vendor/icons">
+
     </head>
 
     <body>
-
       <!-- Modale -->
       <div class="overlay overlay-modal" id="overlay-modal">
         <div id="quit" class="modal">
@@ -42,7 +43,7 @@
           </div>
           <div class="chat-person-wrapper">
             <div class="manager-imagechat">
-              <img src="images/pexels-pixabay-220453.jpg" alt="">
+              <img src="images/pexels-photo-937481.jpeg" alt="">
             </div>
             <div class="chat-name">
               <h4>Mikchael E.</h4>
@@ -59,10 +60,9 @@
             <a href="#" class="btn btn-input">Send</a>
           </div>
         </div>
-
       </div>
-      <div id="overlay" class="overlay overlay-nav"></div>
 
+      <div id="overlay" class="overlay overlay-nav"></div>
 
       <div class="layout">
       <!-- Sidebar -->
@@ -126,7 +126,7 @@
               </div>
               <div class="manager-profile">
                 <div class="manager-image">
-                  <img src="https://images.pexels.com/photos/1408221/pexels-photo-1408221.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                  <img src="images/pexels-photo-937481.jpeg" alt="">
                 </div>
                 <a href="#chat" class="profile-name js--open-modal">Mikhael E.</a>
               </div>
@@ -142,13 +142,13 @@
                 <a href="#"><img src="vendor/icons/wallet.svg" class="icon-wallet icon-top" alt=""></a>
                 <div class="balance">$1,500.00</div>
                 <a href="#"><img src="vendor/icons/arrow-down.svg" class="icon-arrow-down icon-top" alt=""></a>
-							</li>
+              </li>
               <li class="first-link">
                 <a href="#"><img src="vendor/icons/notification.svg" class="icon-notification icon-top" alt=""></a>
-                </li>
-                <li class="first-link">
-                  <a href="#login" class="js--open-modal"><img src="vendor/icons/profile.svg" class="icon-profile icon-top" alt=""></a>
-                  <div class="name-profile">Leonardo Dicaprio</div>
+              </li>
+              <li class="first-link">
+                <a href="#login" class="js--open-modal"><img src="vendor/icons/profile.svg" class="icon-profile icon-top" alt=""></a>
+                <div class="name-profile">Leonardo Dicaprio</div>
               </li>
               <li class="first-link">
                 <a href="#quit" class="js--open-modal"><img src="vendor/icons/quit.svg" class="icon-quit" alt=""></a>
@@ -158,442 +158,439 @@
         </div>
 
     <!-- Dashboard -->
-    <div id="general" class="general active page">
-      <div class="container">
-        <div class="title">
-          <h3>General statistic</h3>
-        </div>
-        <div class="form-body">
-          <form class="form" action="">
-            <input class="form-field" type="date">
-            <input class="form-field" type="date">
-            <a href="#" class="btn btn-refresh"><img src="vendor/icons/refresh.svg" class="icon-refresh" alt=""></a>
-          </form>
-        </div>
-        <div class="table-wrapper">
-          <div class="table-row-wrapper">
-            <div class="column">
-              <div class="table-row">
-                <p>Visit Signups</p>
-                <p class="number">124</p>
+          <div id="general" class="general active page">
+            <div class="container">
+              <div class="title">
+                <h3>General statistic</h3>
               </div>
-              <div class="table-row">
-                <p>FTD</p>
-                <p class="number">445</p>
+              <div class="form-body">
+                <form class="form" action="">
+                  <input class="form-field" type="date">
+                  <input class="form-field" type="date">
+                  <a href="#" class="btn btn-refresh"><img src="vendor/icons/refresh.svg" class="icon-refresh" alt=""></a>
+                </form>
               </div>
-
-                </div>
-                <div class="column">
-                  <div class="table-row">
-                    <p>Net Deposit</p>
-                    <p class="number">564</p>
+              <div class="table-wrapper">
+                <div class="table-row-wrapper">
+                  <div class="column">
+                    <div class="table-row">
+                      <p>Visit Signups</p>
+                      <p class="number">124</p>
+                    </div>
+                    <div class="table-row">
+                      <p>FTD</p>
+                      <p class="number">445</p>
+                    </div>
                   </div>
-                  <div class="table-row">
-                    <p>Turn Over</p>
-                    <p class="number">432</p>
+                  <div class="column">
+                    <div class="table-row">
+                      <p>Net Deposit</p>
+                      <p class="number">564</p>
+                    </div>
+                    <div class="table-row">
+                      <p>Turn Over</p>
+                      <p class="number">432</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="chart-wrapper">
-              <div class="chart-title">
-                <h5>Earnings chart</h5>
+              <div class="chart-wrapper">
+                <div class="chart-title">
+                  <h5>Earnings chart</h5>
+                </div>
+                <div class="chart" style="position: relative;">
+                  <canvas id="myChart" width="800" height="350"></canvas>
+                </div>
               </div>
-              <div class="chart" style="position: relative;">
-                <canvas id="myChart" width="800" height="350"></canvas>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="details" class="page">
-        <div class="container">
-          <div class="title">
-            <h3>Detail statistic</h3>
-          </div>
-          <div class="form-body">
-            <form class="form" action="">
-              <input class="form-field" type="date">
-              <input class="form-field" type="date">
-              <a href="#" class="btn btn-refresh"><img src="vendor/icons/refresh.svg" class="icon-refresh" alt=""></a>
-            </form>
-          </div>
-
-          <div class="empty-line"></div>
-          <div class="scroll-wrapper">
-            <table class="content-table">
-              <thead>
-                <tr>
-                  <th scope="col">Tracker name</th>
-                  <th scope="col">Initialed date</th>
-                  <th scope="col">Visit</th>
-                  <th scope="col">Unique</th>
-                  <th scope="col">Signups</th>
-                  <th scope="col">FTD</th>
-                  <th scope="col">Depositors</th>
-                  <th scope="col">Deposits($)</th>
-                  <th scope="col">Payouts($)</th>
-                  <th scope="col">Turnover</th>
-                  <th scope="col">Deal</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>aff/sam_test</td>
-                  <td>17/04/05 (12:45)</td>
-                  <td>235</td>
-                  <td>448</td>
-                  <td>84</td>
-                  <td>8</td>
-                  <td>3</td>
-                  <td>34,485.00</td>
-                  <td>485.00</td>
-                  <td>45.00</td>
-                  <td>cpl(200)</td>
-                </tr>
-                <tr>
-                  <td>aff/leo_test</td>
-                  <td>15/08/02 (12:45)</td>
-                  <td>235</td>
-                  <td>448</td>
-                  <td>84</td>
-                  <td>8</td>
-                  <td>3</td>
-                  <td>34,485.00</td>
-                  <td>485.00</td>
-                  <td>45.00</td>
-                  <td>cpl(200)</td>
-                </tr>
-                <tr>
-                  <td>aff/sam_test</td>
-                  <td>17/04/05 (12:45)</td>
-                  <td>235</td>
-                  <td>448</td>
-                  <td>84</td>
-                  <td>8</td>
-                  <td>3</td>
-                  <td>34,485.00</td>
-                  <td>485.00</td>
-                  <td>45.00</td>
-                  <td>cpl(200)</td>
-                </tr>
-                <tr>
-                  <td>aff/leo_test</td>
-                  <td>15/08/02 (12:45)</td>
-                  <td>235</td>
-                  <td>448</td>
-                  <td>84</td>
-                  <td>8</td>
-                  <td>3</td>
-                  <td>34,485.00</td>
-                  <td>485.00</td>
-                  <td>45.00</td>
-                  <td>cpl(200)</td>
-                </tr>
-                <tr>
-                  <td>aff/sam_test</td>
-                  <td>17/04/05 (12:45)</td>
-                  <td>235</td>
-                  <td>448</td>
-                  <td>84</td>
-                  <td>8</td>
-                  <td>3</td>
-                  <td>34,485.00</td>
-                  <td>485.00</td>
-                  <td>45.00</td>
-                  <td>cpl(200)</td>
-                </tr>
-                <tr>
-                  <td>aff/leo_test</td>
-                  <td>15/08/02 (12:45)</td>
-                  <td>235</td>
-                  <td>448</td>
-                  <td>84</td>
-                  <td>8</td>
-                  <td>3</td>
-                  <td>34,485.00</td>
-                  <td>485.00</td>
-                  <td>45.00</td>
-                  <td>cpl(200)</td>
-                </tr>
-                <tr>
-                  <td>aff/sam_test</td>
-                  <td>17/04/05 (12:45)</td>
-                  <td>235</td>
-                  <td>448</td>
-                  <td>84</td>
-                  <td>8</td>
-                  <td>3</td>
-                  <td>34,485.00</td>
-                  <td>485.00</td>
-                  <td>45.00</td>
-                  <td>cpl(200)</td>
-                </tr>
-                <tr>
-                  <td>aff/leo_test</td>
-                  <td>15/08/02 (12:45)</td>
-                  <td>235</td>
-                  <td>448</td>
-                  <td>84</td>
-                  <td>8</td>
-                  <td>3</td>
-                  <td>34,485.00</td>
-                  <td>485.00</td>
-                  <td>45.00</td>
-                  <td>cpl(200)</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-
-      <div id="links" class="page">
-        <div class="container">
-          <div class="title">
-            <h3>Links</h3>
-          </div>
-          <div class="links-wrapper">
-            <div class="button-wrapper">
-              <a href="#" class="btn btn-add">+ add new</a>
-            </div>
-            <ul class="links-column">
-              <li>
-                <p>Home page</p>
-                <a href="#">http://www.homepage.com</a>
-                <div class="icons-list">
-                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
-                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
-                </div>
-              </li>
-              <li>
-                <p>Currently offer</p>
-                <a href="#">http://www.currently.com</a>
-                <div class="icons-list">
-                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
-                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
-                </div>
-              </li>
-              <li>
-                <p>Blurpix</p>
-                <a href="#">http://www.blurpix.com</a>
-                <div class="icons-list">
-                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
-                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
-                </div>
-              </li>
-              <li>
-                <p>Your site</p>
-                <a href="#">http://www.yoursite.com</a>
-                <div class="icons-list">
-                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
-                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
-                </div>
-              </li>
-              <li>
-                <p>Google</p>
-                <a href="#">http://www.google.com</a>
-                <div class="icons-list">
-                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
-                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
-                </div>
-              </li>
-              <li>
-                <p>Facebook</p>
-                <a href="#">http://www.facebook.com</a>
-                <div class="icons-list">
-                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
-                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
-                </div>
-              </li>
-              <li>
-                <p>Dashboard</p>
-                <a href="#">http://www.dashboard.com</a>
-                <div class="icons-list">
-                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
-                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
-                </div>
-              </li>
-              <li>
-                <p>Twitter</p>
-                <a href="#">http://www.twitter.com</a>
-                <div class="icons-list">
-                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
-                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
-                </div>
-              </li>
-              <li>
-                <p>Piece of Wind</p>
-                <a href="#">http://www.pieceofwind.com</a>
-                <div class="icons-list">
-                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
-                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
-                </div>
-              </li>
-            </ul>
-            <div class="button-wrapper">
-              <a href="#" class="btn btn-add">+ add new</a>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div id="banners" class="page">
-        <div class="container">
-          <div class="title">
-            <h3>Banners</h3>
-          </div>
-          <div class="links-wrapper">
-            <div class="button-wrapper">
-              <a href="#" class="btn btn-add">+ add new</a>
+          <div id="details" class="page">
+            <div class="container">
+              <div class="title">
+                <h3>Detail statistic</h3>
+              </div>
+              <div class="form-body">
+                <form class="form" action="">
+                  <input class="form-field" type="date">
+                  <input class="form-field" type="date">
+                  <a href="#" class="btn btn-refresh"><img src="vendor/icons/refresh.svg" class="icon-refresh" alt=""></a>
+                </form>
+              </div>
+              <div class="empty-line"></div>
+              <div class="scroll-wrapper">
+                <table class="content-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Tracker name</th>
+                      <th scope="col">Initialed date</th>
+                      <th scope="col">Visit</th>
+                      <th scope="col">Unique</th>
+                      <th scope="col">Signups</th>
+                      <th scope="col">FTD</th>
+                      <th scope="col">Depositors</th>
+                      <th scope="col">Deposits($)</th>
+                      <th scope="col">Payouts($)</th>
+                      <th scope="col">Turnover</th>
+                      <th scope="col">Deal</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>aff/sam_test</td>
+                      <td>17/04/05 (12:45)</td>
+                      <td>235</td>
+                      <td>448</td>
+                      <td>84</td>
+                      <td>8</td>
+                      <td>3</td>
+                      <td>34,485.00</td>
+                      <td>485.00</td>
+                      <td>45.00</td>
+                      <td>cpl(200)</td>
+                    </tr>
+                    <tr>
+                      <td>aff/leo_test</td>
+                      <td>15/08/02 (12:45)</td>
+                      <td>235</td>
+                      <td>448</td>
+                      <td>84</td>
+                      <td>8</td>
+                      <td>3</td>
+                      <td>34,485.00</td>
+                      <td>485.00</td>
+                      <td>45.00</td>
+                      <td>cpl(200)</td>
+                    </tr>
+                    <tr>
+                      <td>aff/sam_test</td>
+                      <td>17/04/05 (12:45)</td>
+                      <td>235</td>
+                      <td>448</td>
+                      <td>84</td>
+                      <td>8</td>
+                      <td>3</td>
+                      <td>34,485.00</td>
+                      <td>485.00</td>
+                      <td>45.00</td>
+                      <td>cpl(200)</td>
+                    </tr>
+                    <tr>
+                      <td>aff/leo_test</td>
+                      <td>15/08/02 (12:45)</td>
+                      <td>235</td>
+                      <td>448</td>
+                      <td>84</td>
+                      <td>8</td>
+                      <td>3</td>
+                      <td>34,485.00</td>
+                      <td>485.00</td>
+                      <td>45.00</td>
+                      <td>cpl(200)</td>
+                    </tr>
+                    <tr>
+                      <td>aff/sam_test</td>
+                      <td>17/04/05 (12:45)</td>
+                      <td>235</td>
+                      <td>448</td>
+                      <td>84</td>
+                      <td>8</td>
+                      <td>3</td>
+                      <td>34,485.00</td>
+                      <td>485.00</td>
+                      <td>45.00</td>
+                      <td>cpl(200)</td>
+                    </tr>
+                    <tr>
+                      <td>aff/leo_test</td>
+                      <td>15/08/02 (12:45)</td>
+                      <td>235</td>
+                      <td>448</td>
+                      <td>84</td>
+                      <td>8</td>
+                      <td>3</td>
+                      <td>34,485.00</td>
+                      <td>485.00</td>
+                      <td>45.00</td>
+                      <td>cpl(200)</td>
+                    </tr>
+                    <tr>
+                      <td>aff/sam_test</td>
+                      <td>17/04/05 (12:45)</td>
+                      <td>235</td>
+                      <td>448</td>
+                      <td>84</td>
+                      <td>8</td>
+                      <td>3</td>
+                      <td>34,485.00</td>
+                      <td>485.00</td>
+                      <td>45.00</td>
+                      <td>cpl(200)</td>
+                    </tr>
+                    <tr>
+                      <td>aff/leo_test</td>
+                      <td>15/08/02 (12:45)</td>
+                      <td>235</td>
+                      <td>448</td>
+                      <td>84</td>
+                      <td>8</td>
+                      <td>3</td>
+                      <td>34,485.00</td>
+                      <td>485.00</td>
+                      <td>45.00</td>
+                      <td>cpl(200)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <ul class="links-column">
-              <li>
-                <p>Banner main</p>
-                <a href="#">http://www.website.com/bannermain.gif</a>
-                <div class="icons-list">
-                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
-                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+          </div>
+
+          <div id="links" class="page">
+            <div class="container">
+              <div class="title">
+                <h3>Links</h3>
+              </div>
+              <div class="links-wrapper">
+                <div class="button-wrapper">
+                  <a href="#" class="btn btn-add">+ add new</a>
                 </div>
-              </li>
-              <li>
-                <p>Sign up banner</p>
-                <a href="#">http://www.website.com/signup.gif</a>
-                <div class="icons-list">
-                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
-                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                <ul class="links-column">
+                  <li>
+                    <p>Home page</p>
+                    <a href="#">http://www.homepage.com</a>
+                    <div class="icons-list">
+                      <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                      <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                    </div>
+                  </li>
+                  <li>
+                    <p>Currently offer</p>
+                    <a href="#">http://www.currently.com</a>
+                    <div class="icons-list">
+                      <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                      <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                    </div>
+                  </li>
+                  <li>
+                    <p>Blurpix</p>
+                    <a href="#">http://www.blurpix.com</a>
+                    <div class="icons-list">
+                      <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                      <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                    </div>
+                  </li>
+                  <li>
+                    <p>Your site</p>
+                    <a href="#">http://www.yoursite.com</a>
+                    <div class="icons-list">
+                      <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                      <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                    </div>
+                  </li>
+                  <li>
+                    <p>Google</p>
+                    <a href="#">http://www.google.com</a>
+                    <div class="icons-list">
+                      <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                      <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                    </div>
+                  </li>
+                  <li>
+                    <p>Facebook</p>
+                    <a href="#">http://www.facebook.com</a>
+                    <div class="icons-list">
+                      <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                      <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                    </div>
+                  </li>
+                  <li>
+                    <p>Dashboard</p>
+                    <a href="#">http://www.dashboard.com</a>
+                    <div class="icons-list">
+                      <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                      <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                    </div>
+                  </li>
+                  <li>
+                    <p>Twitter</p>
+                    <a href="#">http://www.twitter.com</a>
+                    <div class="icons-list">
+                      <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                      <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                    </div>
+                  </li>
+                  <li>
+                    <p>Piece of Wind</p>
+                    <a href="#">http://www.pieceofwind.com</a>
+                    <div class="icons-list">
+                      <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                      <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                    </div>
+                  </li>
+                </ul>
+                <div class="button-wrapper">
+                  <a href="#" class="btn btn-add">+ add new</a>
                 </div>
-              </li>
-              <li>
-                <p>Banner left side</p>
-                <a href="#">http://www.website.com/leftside.gif</a>
-                <div class="icons-list">
-                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
-                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
-                </div>
-              </li>
-              <li>
-                <p>Vertcial banner</p>
-                <a href="#">http://www.website.com/vert.gif</a>
-                <div class="icons-list">
-                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
-                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
-                </div>
-              </li>
-              <li>
-                <p>Front banner</p>
-                <a href="#">http://www.website.com/front.gif</a>
-                <div class="icons-list">
-                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
-                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
-                </div>
-              </li>
-              <li>
-                <p>Horizontal banner</p>
-                <a href="#">http://www.website.com/horizontal.gif</a>
-                <div class="icons-list">
-                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
-                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
-                </div>
-              </li>
-            </ul>
-            <div class="button-wrapper">
-              <a href="#" class="btn btn-add">+ add new</a>
+              </div>
             </div>
           </div>
-        </div>
+
+          <div id="banners" class="page">
+            <div class="container">
+              <div class="title">
+                <h3>Banners</h3>
+              </div>
+              <div class="links-wrapper">
+                <div class="button-wrapper">
+                  <a href="#" class="btn btn-add">+ add new</a>
+                </div>
+                <ul class="links-column">
+                  <li>
+                    <p>Banner main</p>
+                    <a href="#">http://www.website.com/bannermain.gif</a>
+                    <div class="icons-list">
+                      <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                      <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                    </div>
+                  </li>
+                  <li>
+                    <p>Sign up banner</p>
+                    <a href="#">http://www.website.com/signup.gif</a>
+                    <div class="icons-list">
+                      <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                      <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                    </div>
+                  </li>
+                  <li>
+                    <p>Banner left side</p>
+                    <a href="#">http://www.website.com/leftside.gif</a>
+                    <div class="icons-list">
+                      <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                      <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                    </div>
+                  </li>
+                  <li>
+                    <p>Vertcial banner</p>
+                    <a href="#">http://www.website.com/vert.gif</a>
+                    <div class="icons-list">
+                      <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                      <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                    </div>
+                  </li>
+                  <li>
+                    <p>Front banner</p>
+                    <a href="#">http://www.website.com/front.gif</a>
+                    <div class="icons-list">
+                      <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                      <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                    </div>
+                  </li>
+                  <li>
+                    <p>Horizontal banner</p>
+                    <a href="#">http://www.website.com/horizontal.gif</a>
+                    <div class="icons-list">
+                      <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                      <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                    </div>
+                  </li>
+                </ul>
+                <div class="button-wrapper">
+                  <a href="#" class="btn btn-add">+ add new</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="personaldata" class="page">
+            <div class="container">
+              <div class="title">
+                <h3>Personal data</h3>
+              </div>
+              <div class="personal-wrapper">
+                <form class="personal-form">
+                  <div class="field">
+                    <label>Name</label>
+                    <input type="text" name="user-name">
+                  </div>
+                  <div class="field">
+                    <label>Surname</label>
+                    <input type="text" name="user-surname">
+                  </div>
+                  <div class="field">
+                    <label>E-mail</label>
+                    <input type="email" name="user-email">
+                  </div>
+                  <div class="field">
+                    <label>Phone number</label>
+                    <input type="text" name="user-number">
+                  </div>
+                </form>
+              </div>
+              <div class="social-wrapper">
+                <form class="personal-form">
+                  <div class="field">
+                    <label>Skype</label>
+                    <input type="text" name="user-skype">
+                  </div>
+                  <div class="field">
+                    <label>ICQ</label>
+                    <input type="text" name="user-icq">
+                  </div>
+                  <div class="field">
+                    <label>Msn</label>
+                    <input type="text" name="user-msn">
+                  </div>
+                </form>
+              </div>
+              <div class="wallet-wrapper">
+                <form class="personal-form">
+                  <div class="field">
+                    <label>Wallet</label>
+                    <input type="text" name="user-wallet">
+                  </div>
+                </form>
+              </div>
+              <div class="password-wrapper">
+                <form class="personal-form">
+                  <div class="field">
+                    <label>Password</label>
+                    <input type="password" name="user-password">
+                  </div>
+                  <div class="field">
+                    <label>Repeat</label>
+                    <input type="password" name="user-password">
+                  </div>
+                </form>
+              </div>
+              <div class="button-wrapper">
+                <a href="#" class="btn btn-save">Save</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="payout" class="page">
+            <div class="container">
+              <div class="title">
+                <h3>Payout</h3>
+              </div>
+
+            </div>
+          </div>
+
+          <div id="postback" class="page">
+            <div class="container">
+              <div class="title">
+                <h3>Postback</h3>
+              </div>
+
+            </div>
+          </div>
+
       </div>
 
-      <div id="personaldata" class="page">
-        <div class="container">
-          <div class="title">
-            <h3>Personal data</h3>
-          </div>
-
-          <div class="personal-wrapper">
-            <form class="personal-form">
-              <div class="field">
-                <label>Name</label>
-                <input type="text" name="user-name">
-              </div>
-              <div class="field">
-                <label>Surname</label>
-                <input type="text" name="user-surname">
-              </div>
-              <div class="field">
-                <label>E-mail</label>
-                <input type="email" name="user-email">
-              </div>
-              <div class="field">
-                <label>Phone number</label>
-                <input type="text" name="user-number">
-              </div>
-            </form>
-          </div>
-          <div class="social-wrapper">
-            <form class="personal-form">
-              <div class="field">
-                <label>Skype</label>
-                <input type="text" name="user-skype">
-              </div>
-              <div class="field">
-                <label>ICQ</label>
-                <input type="text" name="user-icq">
-              </div>
-              <div class="field">
-                <label>Msn</label>
-                <input type="text" name="user-msn">
-              </div>
-            </form>
-          </div>
-          <div class="wallet-wrapper">
-            <form class="personal-form">
-              <div class="field">
-                <label>Wallet</label>
-                <input type="text" name="user-wallet">
-              </div>
-            </form>
-          </div>
-          <div class="password-wrapper">
-            <form class="personal-form">
-              <div class="field">
-                <label>Password</label>
-                <input type="password" name="user-password">
-              </div>
-              <div class="field">
-                <label>Repeat</label>
-                <input type="password" name="user-password">
-              </div>
-            </form>
-          </div>
-          <div class="button-wrapper">
-            <a href="#" class="btn btn-save">Save</a>
-          </div>
-
-
-        </div>
-      </div>
-
-      <div id="payout" class="page">
-        <div class="container">
-          <div class="title">
-            <h3>Payout</h3>
-          </div>
-
-        </div>
-      </div>
-
-      <div id="postback" class="page">
-        <div class="container">
-          <div class="title">
-            <h3>Postback</h3>
-          </div>
-
-        </div>
-      </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
-    <script src="./js/script.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+      <script src="./js/script.js"></script>
 
     </body>
 </html>

@@ -28,9 +28,7 @@
 		"keywords": [],
 		"author": "",
 		"license": "ISC",
-		"dependencies": {
-				"sass": "^1.42.1"
-		},
+		"dependencies": {},
 		"devDependencies": {
 				"autoprefixer": "^10.2.4",
 				"autoprefixer-cli": "^1.0.0",
