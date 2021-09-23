@@ -95,12 +95,12 @@
   const initModal = function(event){
 
     for(const button of modalClose) {
-      button.addEventListener('click', modalClose);
+      button.addEventListener('click', closeBox);
     }
-    overlaymodal.addEventListener('click', modalClose);
+    overlaymodal.addEventListener('click', closeBox);
 
       document.addEventListener('keyup', (e) => {
-      if (e.keyCode === 27) {
+      if (e.key === 27) {
         modalClose(event);
       }
     });
@@ -112,10 +112,18 @@
         for(const modal of modals) {
           modal.classList.toggle('active', modal.id === id);
         }
-        overlaymodal.classList.toggle('active');
+        overlaymodal.classList.toggle('show');
       });
     }
   };
+
+	const closeBox = (event) => {
+		event.preventDefault();
+		for (const modal of modals) {
+			modal.classList.remove('active');
+		}
+		overlaymodal.classList.remove('show');
+	};
 
 	const app = () => {
 		toggleMenu();
