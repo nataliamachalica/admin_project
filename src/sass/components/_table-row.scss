@@ -28,15 +28,17 @@
 
 				p {
 					display: inline-block;
-					font-size: 12px;
+					font-size: 13px;
 					margin: 0;
-
+					font-weight: bold;
+					color: $text-color;
 				}
 
 				.number {
 					//margin-left: 150px;
 					//padding-left: 30px;
 					color: black;
+					font-weight: 400;
 				}
       }
 		}

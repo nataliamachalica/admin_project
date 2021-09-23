@@ -33,3 +33,59 @@
     display: block;
   }
 }
+
+#login.modal{
+	padding: 20px;
+	min-width: 700px;
+
+	.login-title{
+		height: 20px;
+
+		h3{
+			font-weight: 400;
+			font-size: 13px;
+		}
+	}
+
+	.login-wrapper {
+		padding: 50px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		input {
+			height: 40px;
+			border-radius: 5%;
+
+			&:first-of-type {
+				margin-right: 10px;
+			}
+		}
+
+		.btn {
+			width: 150px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	#login.modal{
+		min-width: 100px;
+		padding: 10px;
+
+		.login-wrapper{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			input{
+				margin-bottom: 10px;
+
+				&:first-of-type {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}

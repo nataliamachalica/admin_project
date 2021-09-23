@@ -22,6 +22,19 @@
           </div>
         </div>
 
+        <div id="login" class="modal">
+          <div class="title login-title">
+            <h3>Login</h3>
+          </div>
+          <div class="login-wrapper">
+            <form action="" method="POST">
+              <input type="text" name="user-name" placeholder="login name">
+              <input type="text" name="password" placeholder="password">
+              <a href="#" class="btn js--close-modal">Enter</a>
+            </form>
+          </div>
+        </div>
+
       </div>
       <div id="overlay" class="overlay overlay-nav"></div>
 
@@ -74,7 +87,7 @@
                   <a href="#" class="nav-item nav-link"><img src="vendor/icons/notification.svg" class="icon-notification icon-top" alt="">Notifications</a>
                 </li>
                 <li class="top-link">
-                  <a href="#" class="nav-item nav-link"><img src="vendor/icons/profile.svg" class="icon-profile icon-top" alt="">Leonardo Dicaprio</a>
+                  <a href="#login" class="nav-item nav-link js--open-modal"><img src="vendor/icons/profile.svg" class="icon-profile icon-top" alt="">Leonardo Dicaprio</a>
                 </li>
                 <li class="top-link">
                   <a href="#quit" class="nav-item nav-link js--open-modal"><img src="vendor/icons/quit.svg" class="icon-quit" alt="">Log out</a>
@@ -82,6 +95,7 @@
               </ul>
             </div>
             <div class="contact">
+              <div class="rwd-line"></div>
               <div class="manager-title">
                 <h3>Your Manager</h3>
               </div>
@@ -108,7 +122,7 @@
                 <a href="#"><img src="vendor/icons/notification.svg" class="icon-notification icon-top" alt=""></a>
                 </li>
                 <li class="first-link">
-                  <a href="#"><img src="vendor/icons/profile.svg" class="icon-profile icon-top" alt=""></a>
+                  <a href="#login" class="js--open-modal"><img src="vendor/icons/profile.svg" class="icon-profile icon-top" alt=""></a>
                   <div class="name-profile">Leonardo Dicaprio</div>
               </li>
               <li class="first-link">

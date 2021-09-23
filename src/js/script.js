@@ -117,7 +117,7 @@
     }
   };
 
-	const closeBox = (event) => {
+	const closeBox = function(event) {
 		event.preventDefault();
 		for (const modal of modals) {
 			modal.classList.remove('active');
