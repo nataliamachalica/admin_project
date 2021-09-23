@@ -177,4 +177,20 @@ aside {
 			display: block;
 		}
 	}
+
+	.nav-active {
+		transform: translateX(142px);
+		display: block;
+		background-color: $background-menu;
+		background: $background-menu;
+
+		.contact {
+			opacity: 1;
+		}
+
+		.sidebar-links li {
+			opacity: 1;
+		}
+	}
+
 }
