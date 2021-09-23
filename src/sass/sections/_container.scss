@@ -1,34 +1,45 @@
-.full-page {
+.page {
 	margin: 0;
-	display: flex;
+	display: none;
 	width: 100%;
 	height: 100%;
 	z-index: 1;
 
+	&.active{
+		display: block;
+	}
+
 	.container {
 		display: flex;
-		flex-direction: column;
-		width: 95%;
+		min-width: 85%;
 		min-height: 98%;
 		box-sizing: content-box;
 		background-color: $background-container;
 		margin: 70px 20px 20px 210px;
 		box-shadow: 0 0 10px $background-color2;
 		border-radius: 5px;
+		flex-direction: column;
 	}
 }
 
 @media (max-width: 768px){
-	.full-page{
+	.page{
 		width: 100%;
-    display: flex;
-    align-items: center;
+		height: 100%;
+		display: none;
+		align-items: center;
+
+		&:active {
+			display: block;
+		}
 
 		.container {
 			display: flex;
 			margin-left: 65px;
 			margin-top: 20px;
-			width: 100%;
+			width: 70%;
+			margin: 20px 40px 20px 60px;
+			height: 95%;
 		}
 	}
 }

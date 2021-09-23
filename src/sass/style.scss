@@ -1,5 +1,5 @@
 @import "variables";
-//@import "mixins";
+@import "mixins";
 @import "normalize";
 @import "layout";
 
@@ -10,6 +10,8 @@
 @import "components/_button.scss";
 @import "components/_burger.scss";
 @import "components/_table-row.scss";
+@import "components/_chart-wrapper.scss";
+@import "components/_links.scss";
 
 /* Sections */
 //@import "section/registration_form";

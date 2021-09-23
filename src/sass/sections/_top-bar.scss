@@ -35,7 +35,7 @@
 
 				&:hover img {
 					transform: scale(1.3);
-					color: $brand-main-color;
+          filter: invert(70%) sepia(71%) saturate(4103%) hue-rotate(348deg) brightness(100%) contrast(93%);
 				}
 			}
 

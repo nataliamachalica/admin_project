@@ -23,26 +23,26 @@
             </div>
             <nav class="sidebar-nav">
               <ul class="sidebar-links">
-                <li>
-                  <a href="#general"><img src="vendor/icons/general.svg" class="icon-general icon" alt="">General</a>
+                <li class="nav-list">
+                  <a class="nav-link active" href="#general"><img src="vendor/icons/general.svg" class="icon-general icon" alt="">General</a>
                 </li>
-                <li>
-                  <a href="#details"><img src="vendor/icons/details.svg" class="icon-details icon" alt="">Details</a>
+                <li class="nav-list">
+                  <a class="nav-link" href="#details"><img src="vendor/icons/details.svg" class="icon-details icon" alt="">Details</a>
                 </li>
-                <li>
-                  <a href="#links"><img src="vendor/icons/links.svg" class="icon-links icon" alt="">Links</a>
+                <li class="nav-list">
+                  <a class="nav-link" href="#links"><img src="vendor/icons/links.svg" class="icon-links icon" alt="">Links</a>
                 </li>
-                <li>
-                  <a href="#banners"><img src="vendor/icons/banners.svg" class="icon-banners icon" alt="">Banners</a>
+                <li class="nav-list">
+                  <a class="nav-link" href="#banners"><img src="vendor/icons/banners.svg" class="icon-banners icon" alt="">Banners</a>
                 </li>
-                <li>
-                  <a href="#personaldata"><img src="vendor/icons/personaldata.svg" class="icon-personaldata icon" alt="">Personal data</a>
+                <li class="nav-list">
+                  <a class="nav-link" href="#personaldata"><img src="vendor/icons/personaldata.svg" class="icon-personaldata icon" alt="">Personal data</a>
                 </li>
-                <li>
-                  <a href="#payout"><img src="vendor/icons/payout.svg" class="icon-payout icon" alt="">Payout</a>
+                <li class="nav-list">
+                  <a class="nav-link" href="#payout"><img src="vendor/icons/payout.svg" class="icon-payout icon" alt="">Payout</a>
                 </li>
-                <li>
-                  <a href="#postback"><img src="vendor/icons/postback.svg" class="icon-postback icon" alt="">Postback</a>
+                <li class="nav-list">
+                  <a class="nav-link" href="#postback"><img src="vendor/icons/postback.svg" class="icon-postback icon" alt="">Postback</a>
                 </li>
               </ul>
             </nav>
@@ -52,7 +52,7 @@
               </div>
               <div class="manager-profile">
                 <div class="manager-image">
-                  <img src="images/pexels-pixabay-220453.jpg" alt="">
+                  <img src="https://images.pexels.com/photos/1408221/pexels-photo-1408221.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
                 </div>
                 <a href="#" class="profile-name">Mikhael E.</a>
               </div>
@@ -84,29 +84,30 @@
         </div>
 
     <!-- Dashboard -->
-        <div class="full-page">
-          <div class="container">
-            <div class="title">
-              <h3>General statistic</h3>
-            </div>
-            <div class="form-body">
-              <form class="form">
-                <input class="form-field" type="date">
-                <input class="form-field" type="date">
-                <a href="#" class="btn btn-refresh"><img src="vendor/icons/refresh.svg" class="icon-refresh" alt=""></a>
-              </form>
-            </div>
-            <div class="table-wrapper">
-              <div class="table-row-wrapper">
-                <div class="column">
-                  <div class="table-row">
-                    <p>Visit Signups</p>
-                    <p class="number">124</p>
-                  </div>
-                  <div class="table-row">
-                    <p>FTD</p>
-                    <p class="number">445</p>
-                  </div>
+    <div id="general" class="general active page">
+      <div class="container">
+        <div class="title">
+          <h3>General statistic</h3>
+        </div>
+        <div class="form-body">
+          <form class="form" action="">
+            <input class="form-field" type="date">
+            <input class="form-field" type="date">
+            <a href="#" class="btn btn-refresh"><img src="vendor/icons/refresh.svg" class="icon-refresh" alt=""></a>
+          </form>
+        </div>
+        <div class="table-wrapper">
+          <div class="table-row-wrapper">
+            <div class="column">
+              <div class="table-row">
+                <p>Visit Signups</p>
+                <p class="number">124</p>
+              </div>
+              <div class="table-row">
+                <p>FTD</p>
+                <p class="number">445</p>
+              </div>
+                  
                 </div>
                 <div class="column">
                   <div class="table-row">
@@ -120,13 +121,259 @@
                 </div>
               </div>
             </div>
-            <div class="chart-wrapper">
+            <div class="chart-wrapper row max-width">
+              <div class="chart-title">
+                <h5>Earnings chart</h5>
+              </div>
+              <div class="chart">
+                <canvas id="myChart" class="max-width"></canvas>
 
             </div>
           </div>
         </div>
       </div>
 
+      <div id="details" class="page">
+        <div class="container">
+          <div class="title">
+            <h3>Detail statistic</h3>
+          </div>
+          <div class="form-body">
+            <form class="form" action="">
+              <input class="form-field" type="date">
+              <input class="form-field" type="date">
+              <a href="#" class="btn btn-refresh"><img src="vendor/icons/refresh.svg" class="icon-refresh" alt=""></a>
+            </form>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div id="links" class="page">
+        <div class="container">
+          <div class="title">
+            <h3>Links</h3>
+          </div>
+          <div class="links-wrapper">
+            <div class="button-wrapper">
+              <a href="#" class="btn btn-add">+ add new</a>
+            </div>
+            <ul class="links-column">
+              <li>
+                <p>Home page</p>
+                <a href="#">http://www.homepage.com</a>
+                <div class="icons-list">
+                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                </div>
+              </li>
+              <li>
+                <p>Currently offer</p>
+                <a href="#">http://www.currently.com</a>
+                <div class="icons-list">
+                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                </div>
+              </li>
+              <li>
+                <p>Blurpix</p>
+                <a href="#">http://www.blurpix.com</a>
+                <div class="icons-list">
+                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                </div>
+              </li>
+              <li>
+                <p>Your site</p>
+                <a href="#">http://www.yoursite.com</a>
+                <div class="icons-list">
+                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                </div>
+              </li>
+              <li>
+                <p>Google</p>
+                <a href="#">http://www.google.com</a>
+                <div class="icons-list">
+                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                </div>
+              </li>
+              <li>
+                <p>Facebook</p>
+                <a href="#">http://www.facebook.com</a>
+                <div class="icons-list">
+                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                </div>
+              </li>
+              <li>
+                <p>Dashboard</p>
+                <a href="#">http://www.dashboard.com</a>
+                <div class="icons-list">
+                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                </div>
+              </li>
+              <li>
+                <p>Twitter</p>
+                <a href="#">http://www.twitter.com</a>
+                <div class="icons-list">
+                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                </div>
+              </li>
+              <li>
+                <p>Piece of Wind</p>
+                <a href="#">http://www.pieceofwind.com</a>
+                <div class="icons-list">
+                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                </div>
+              </li>
+            </ul>
+            <div class="button-wrapper">
+              <a href="#" class="btn btn-add">+ add new</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="banners" class="page">
+        <div class="container">
+          <div class="title">
+            <h3>Banners</h3>
+          </div>
+          <div class="links-wrapper">
+            <div class="button-wrapper">
+              <a href="#" class="btn btn-add">+ add new</a>
+            </div>
+            <ul class="links-column">
+              <li>
+                <p>Banner main</p>
+                <a href="#">http://www.website.com/bannermain.gif</a>
+                <div class="icons-list">
+                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                </div>
+              </li>
+              <li>
+                <p>Sign up banner</p>
+                <a href="#">http://www.website.com/signup.gif</a>
+                <div class="icons-list">
+                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                </div>
+              </li>
+              <li>
+                <p>Banner left side</p>
+                <a href="#">http://www.website.com/leftside.gif</a>
+                <div class="icons-list">
+                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                </div>
+              </li>
+              <li>
+                <p>Vertcial banner</p>
+                <a href="#">http://www.website.com/vert.gif</a>
+                <div class="icons-list">
+                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                </div>
+              </li>
+              <li>
+                <p>Front banner</p>
+                <a href="#">http://www.website.com/front.gif</a>
+                <div class="icons-list">
+                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                </div>
+              </li>
+              <li>
+                <p>Horizontal banner</p>
+                <a href="#">http://www.website.com/horizontal.gif</a>
+                <div class="icons-list">
+                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                </div>
+              </li>
+            </ul>
+            <div class="button-wrapper">
+              <a href="#" class="btn btn-add">+ add new</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="banners" class="page">
+        <div class="container">
+          <div class="title">
+            <h3>Banners</h3>
+          </div>
+          <div class="links-wrapper">
+            <div class="button-wrapper">
+              <a href="#" class="btn btn-add">+ add new</a>
+            </div>
+            <ul class="links-column">
+              <li>
+                <p>Banner main</p>
+                <a href="#">http://www.website.com/bannermain.gif</a>
+                <div class="icons-list">
+                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                </div>
+              </li>
+              <li>
+                <p>Sign up banner</p>
+                <a href="#">http://www.website.com/signup.gif</a>
+                <div class="icons-list">
+                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                </div>
+              </li>
+              <li>
+                <p>Banner left side</p>
+                <a href="#">http://www.website.com/leftside.gif</a>
+                <div class="icons-list">
+                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                </div>
+              </li>
+              <li>
+                <p>Vertcial banner</p>
+                <a href="#">http://www.website.com/vert.gif</a>
+                <div class="icons-list">
+                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                </div>
+              </li>
+              <li>
+                <p>Front banner</p>
+                <a href="#">http://www.website.com/front.gif</a>
+                <div class="icons-list">
+                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                </div>
+              </li>
+              <li>
+                <p>Horizontal banner</p>
+                <a href="#">http://www.website.com/horizontal.gif</a>
+                <div class="icons-list">
+                  <img src="vendor/icons/links.svg" class="icon-links" alt="">
+                  <img src="vendor/icons/trash.svg" class="icon-trash" alt="">
+                </div>
+              </li>
+            </ul>
+            <div class="button-wrapper">
+              <a href="#" class="btn btn-add">+ add new</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
       <script src="./js/script.js"></script>
+
     </body>
 </html>
