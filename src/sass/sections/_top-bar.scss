@@ -10,23 +10,21 @@
 	flex-direction: row;
 	justify-content: flex-end;
   z-index: 5;
-	//font-family: ;
+  font-family: $header-font;
 
 	.top-bar-right{
 		display: flex;
 		//flex-direction: row;
-		//margin: 0 auto;
-
 	}
 
 	.top-menu-links{
 		display: flex;
 		align-items: center;
 		margin: 0;
-		//flex-direction: row;
+		flex-direction: row;
 
 		.first-link{
-			display: inline-block;
+			display: flex;
 			align-items: center;
 			height: 100%;
 			list-style: none;
@@ -54,15 +52,25 @@
 			}
 
 			img {
-				height: 12px;
-				width: 12px;
-				margin: 0 15px;
+				height: 15px;
+				width: 15px;
+				margin: 0 10px;
 			}
 		}
 	}
 
+	.name-profile{
+		font-size: 13px;
+	}
+
 	.balance {
 		font-weight: 600;
-		font-weight: 1rem;
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 768px) {
+	.top-bar {
+		display: none;
 	}
 }
