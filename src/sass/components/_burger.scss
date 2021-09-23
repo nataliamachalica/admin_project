@@ -1,0 +1,25 @@
+.burger {
+	padding: 10px;
+	cursor: pointer;
+
+	div {
+		width: 20px;
+		background-color: white;
+
+	}
+
+	.line1 {
+		height: 2px;
+		margin: 2px 5px 5px 5px;
+	}
+
+	.line2 {
+		height: 2px;
+		margin: 5px;
+	}
+
+	.line3 {
+		height: 2px;
+		margin: 5px 5px 2px 5px;
+	}
+}

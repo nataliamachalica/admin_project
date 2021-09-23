@@ -7,11 +7,28 @@
 
 	.container {
 		display: flex;
+		flex-direction: column;
 		width: 95%;
 		min-height: 630px;
 		box-sizing: content-box;
 		background-color: $background-container;
 		margin: 70px 20px 20px 210px;
 		box-shadow: 0 0 10px $background-color2;
+		border-radius: 5px;
+	}
+}
+
+@media (max-width: 768px){
+	.full-page{
+		width: 100%;
+    display: flex;
+    align-items: center;
+
+		.container {
+			display: flex;
+			margin-left: 65px;
+			margin-top: 20px;
+			width: 100%;
 		}
+	}
 }

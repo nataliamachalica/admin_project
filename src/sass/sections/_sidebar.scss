@@ -33,18 +33,6 @@ aside {
 		}
 	}
 
-	.burger {
-		padding: 10px;
-		cursor: pointer;
-
-		div {
-			width: 18px;
-			height: 2px;
-			background-color: white;
-			margin: 5px;
-		}
-	}
-
 	.sidebar-links {
 		margin: 0;
 		display: flex;
@@ -162,5 +150,31 @@ aside {
       font-size: 12px;
 		}
 	}
+}
 
+@media (max-width: 768px) {
+	.menu {
+		display: block;
+		width: 48px;
+	}
+
+	aside{
+		position: fixed;
+		left: 0;
+		transition: 0.5s ease;
+		transform: translateX(-142px);
+
+		.contact {
+			opacity: 0;
+			transition: 0.5s ease;
+		}
+
+		.sidebar-links li {
+			opacity: 0;
+		}
+
+		.burger {
+			display: block;
+		}
+	}
 }
