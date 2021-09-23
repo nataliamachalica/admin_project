@@ -29,6 +29,12 @@ img{
 	background-color: $text-color;
 }
 
+.btn-input {
+	min-height: 32px;
+	font-size: 15px;
+	min-width: 80px;
+}
+
 @media (max-width: 768px) {
 	.btn-refresh {
 		padding: 0 10px;
