@@ -25,8 +25,6 @@
   const titleClickHandler = function(event){
     event.preventDefault();
     const clickedPage = this;
-    console.log('link was clicked');
-    console.log(event);
 
     const activeLinks = document.querySelectorAll('.nav-list a.active');
 
